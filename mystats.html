@@ -52,6 +52,43 @@
         </tbody>
     </table>
 
+
+    <hr>
+
+    <h2>Code Snippet</h2>
+    <p>For a different code snippet, I found a relevant question on Stack Overflow regarding HTML and embedded video. Here's the question along with a quick-link to the source:</p>
+
+    <blockquote>
+        <p><strong>Question:</strong> How can I embed HTML5 video with a Flash fallback for cross-browser compatibility?</p>
+        <p><a href="<hr>
+
+            <h2>Code Snippet</h2>
+            <p>For a different code snippet, I found a relevant question on Stack Overflow regarding HTML and embedded video. Here's the question along with a quick-link to the source:</p>
+        
+            <blockquote>
+                <p><strong>Question:</strong> How can I embed HTML5 video with a Flash fallback for cross-browser compatibility?</p>
+                <p><a href="https://stackoverflow.com/questions/52747919/how-to-show-overlay-on-plyr-html5-video-player-when-in-fullscreen" target="_blank">Source on Stack Overflow</a></p>
+            </blockquote>
+        
+            
+
+    <p>Below is the code snippet for embedding HTML5 video with a Flash fallback:</p>
+    
+    <pre>
+        <code>
+            &lt;!-- Video for Everybody - HTML5 Video with Flash fallback --&gt;
+            &lt;video controls="controls" poster="path/to/poster.jpg" width="640" height="360"&gt;
+                &lt;source src="path/to/video.mp4" type="video/mp4" /&gt;
+                &lt;!-- Flash fallback for non-HTML5 browsers without JavaScript --&gt;
+                &lt;object type="application/x-shockwave-flash" data="flashmediaelement.swf" width="640" height="360"&gt;
+                    &lt;param name="movie" value="flashmediaelement.swf" /&gt;
+                    &lt;param name="flashvars" value="controls=true&amp;file=path/to/video.mp4" /&gt;
+                    &lt;!-- Image as a last resort --&gt;
+                    &lt;img src="path/to/poster.jpg" width="640" height="360" alt="Video" title="No video playback capabilities" /&gt;
+                &lt;/object&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
   
 </body>
 </html>
